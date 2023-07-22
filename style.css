@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+:root {
+    --primary-text-color: #EDF0F4;
+    --secondary-text-color: #C7CED4;
+    --accent-color: #6b9eb1;
+    --accent-color-dark: #161a1d;
+    --padding-inline-section: 20px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.title {
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline;
+    text-align: center;
+}
+
+/* Utility classes */
+
+button {
+    border-radius: 999px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.small-bold-text {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.container {
+    max-width: 1480px;
+    margin-inline: auto;
+    padding: 6px 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.gap {
+    gap: 6px;
+}
+
+.hover-link {
+    color: var(--accent-color-dark);
+    transition: 0.2s ease-out;
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
+}
+
+.btn {
+    background-color: var(--accent-color-dark);
+    border-radius: 999px;
+    padding: 5px 15px;
+    color: var(--primary-text-color);
+    border: 1px solid Black;
+    justify-content: center;
+}
+
+
+.btn:hover {
+    color: var(--accent-color);
+    background-color: Black;
+    border: 1px solid var(--accent-color-dark);
+}
+
+
+
+
+/* top banner */
+.top-banner {
+    height: 35px ;
+    width: 100vw;
+    background-color: var(--accent-color);
+}
+
+.banner-text {
+    color: var(--primary-text-color);
+    text-align: center;
+}
+
+/* nav section */
+.main-nav {
+    height: 65px ;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+.main-nav>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo>h4 {
+    color: var(--accent-color-dark);
+}
+
+.nav-links {
+    justify-content: center;
+    gap: 20px;
+    flex-basis: 730px;
+}
+
+/* header-left */
+.hero-section>.container {
+    height: calc(100vh - 100px);
+    width: 100vw;
+    gap: 10px;
+}
+
+.hero-left {
+    width: 50%;
+    text-align: center;
+    color: var(--primary-text-color);
+}
+.hero-left>h1{
+    background-color: var(--accent-color);
+
+}
+.hero-right {
+    width: 50%;
+    text-align: center;
+}
