@@ -12,7 +12,7 @@
     --primary-text-color: #EDF0F4;
     --secondary-text-color: #C7CED4;
     --accent-color: #6b9eb1;
-    --accent-color: #46acff;
+    --accent-color: #5597af;
     --accent-color-dark: #161a1d;
     --padding-inline-section: 20px;
 }
@@ -20,6 +20,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
+    background-image: url("./assets/bg.png");
+    background-size: 100%;
 }
 
 h1 {
@@ -83,8 +85,8 @@ button {
     transition: 0.2s ease-out;
 }
 
-.hover-link:hover {
-    color: var(--accent-color);
+.hover-link: hover {
+    /* color: var(--accent-color); */
 }
 
 .btn {
@@ -104,13 +106,13 @@ button {
 }
 
 
-/* Animation */ 
+/* Animation */
 .hover-underline-animation {
     display: inline-block;
     position: relative;
-  }
-  
-  .hover-underline-animation:after {
+}
+
+.hover-underline-animation:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -118,20 +120,20 @@ button {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color:var(--accent-color);
+    background-color: var(--primary-text-color);
     transform-origin: bottom right;
     transition: transform 0.2s ease-out;
-  }
-  
-  .hover-underline-animation:hover:after {
+}
+
+.hover-underline-animation:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
+}
 
 
 /* top banner */
 .top-banner {
-    height: 35px ;
+    height: 35px;
     width: 100vw;
     background-color: var(--accent-color);
 }
@@ -142,9 +144,17 @@ button {
 }
 
 /* nav section */
-.main-nav {
-    height: 65px ;
+.nav {
+    height: 65px;
     width: 100vw;
+    position: relative;
+    z-index: 20;
+    top: 0;
+    background: rgba(0, 0, 0, 0.01);
+    backdrop-filter: blur(20px);
+}
+
+.main-nav {
     justify-content: space-between;
 }
 
@@ -165,6 +175,14 @@ button {
 }
 
 /* header-left */
+
+.top-img {
+    position: absolute;
+    top: 18%;
+    right: 3%;
+}
+
+
 .hero-section>.container {
     height: calc(100vh - 100px);
     width: 100vw;
@@ -178,11 +196,13 @@ button {
     text-align: center;
     color: var(--primary-text-color);
 }
-.hero-left>h1{
-    font-size:9rem;
+
+.hero-left>h1 {
+    font-size: 9rem;
     background-color: var(--accent-color);
 
 }
+
 .hero-right {
     width: 50%;
     height: 100%;
