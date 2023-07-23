@@ -12,6 +12,7 @@
     --primary-text-color: #EDF0F4;
     --secondary-text-color: #C7CED4;
     --accent-color: #6b9eb1;
+    --accent-color: #46acff;
     --accent-color-dark: #161a1d;
     --padding-inline-section: 20px;
 }
@@ -149,14 +150,18 @@ button {
 
 .hero-left {
     width: 50%;
+    height: 100%;
+    justify-content: center;
     text-align: center;
     color: var(--primary-text-color);
 }
 .hero-left>h1{
+    font-size:9rem;
     background-color: var(--accent-color);
 
 }
 .hero-right {
     width: 50%;
+    height: 100%;
     text-align: center;
 }
