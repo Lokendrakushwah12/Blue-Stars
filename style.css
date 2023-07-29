@@ -200,8 +200,10 @@ button {
 }
 
 .hero-left>h1 {
-    font-size: 9rem;
-    background-color: var(--accent-color);
+    font-size: 6rem;
+    /* backdrop-filter: blur(10px); */
+    text-shadow: 0px 2px 30px #00000038;
+    /* background-color:#5597af13; */
 
 }
 
